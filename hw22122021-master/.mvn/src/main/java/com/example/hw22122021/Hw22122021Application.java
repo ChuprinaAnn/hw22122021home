@@ -12,20 +12,19 @@ import java.util.Date;
 import java.util.List;
 
 @RestController
-@SpringBootApplication
 @RequestMapping("/api")
 public class Hw22122021Application {
-    ArrayList<String> answers = new ArrayList<>();
+    ArrayList<Object> answers = new ArrayList<>();
     //создать ответ
     /* curl -X POST http://localhost:8080/post -H 'Content-Type: text/plain' -d 'text' */
     @PostMapping("/post")
-    public void addText(@RequestBody String text) {
+    public void addText(@RequestBody Object text) {
        answers.add(text);
     }
     //выдать ответ
     //curl -X GET  http://localhost:8080/get 'Content-Type: text/plain'
     @GetMapping("/get")
-    public String getText(@RequestBody String text) {
+    public Object getText() {
         for (int i = 0; i < answers.size(); i++) {
             return answers.get(i);
         }
