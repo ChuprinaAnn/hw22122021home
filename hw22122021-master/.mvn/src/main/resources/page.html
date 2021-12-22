@@ -7,12 +7,12 @@
 min.css" integrity="sha384-
 ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
-<!--    <script-->
-<!--            src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">-->
-<!--    </script>-->
-<!--    <script src="scripts.js"></script>-->
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="page.js"></script>
 </head>
-<form name="test" method="post" action="http://localhost:8080/post">
+<!--<form name="test" method="post" action="http://localhost:8080/post">-->
     <p>
         <label>Ваше имя</label>
         <input type="text"  name="firstName">
@@ -76,7 +76,12 @@ ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             Отправить данные
         </button>
     </p>
-    <p><b>Спасибо за прохождение опроса! Ваш отзыв очень важен для нас!</b><br>
+    <p><b>Спасибо за прохождение опроса! Ваш отзыв очень важен для нас!</b></p><br>
 </form>
 </body>
 </html>
+<script>
+    $(document).ready(function () {
+       AnswerList();
+    });
+</script>
