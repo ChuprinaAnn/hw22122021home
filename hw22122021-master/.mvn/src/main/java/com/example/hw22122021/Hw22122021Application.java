@@ -12,13 +12,13 @@ import java.util.Date;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+//@RequestMapping("/api")
 public class Hw22122021Application {
-    ArrayList<Object> answers = new ArrayList<>();
+    ArrayList<Answer> answers = new ArrayList<>();
     //создать ответ
     /* curl -X POST http://localhost:8080/post -H 'Content-Type: text/plain' -d 'text' */
     @PostMapping("/post")
-    public void addText(@RequestBody Object text) {
+    public void addText(@RequestBody Answer text) {
        answers.add(text);
     }
     //выдать ответ
