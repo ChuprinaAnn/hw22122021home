@@ -1,0 +1,82 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title>Опрос</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.
+min.css" integrity="sha384-
+ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+<!--    <script-->
+<!--            src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">-->
+<!--    </script>-->
+<!--    <script src="scripts.js"></script>-->
+</head>
+<form name="test" method="post" action="http://localhost:8080/post">
+    <p>
+        <label>Ваше имя</label>
+        <input type="text"  name="firstName">
+    </p>
+    <p>
+        <label>Ваша фамилия</label>
+        <input type="text" name="lastName">
+    </p>
+    <p>
+        <label>Ваше отчество</label>
+        <input type="text"  placeholder="заполнение необязательно" name="middleName">
+    </p>
+    <p>
+        <label>Email</label>
+        <input type="email"  name="email">
+    </p>
+    <p>
+        <label>Телефон</label>
+        <input type="tel" name="phone">
+    </p>
+    <p>
+        <label>Ваш пол</label>
+        <label>
+            <input type="radio" name="gender" value="mrs">
+            Ж
+        </label>
+        <label>
+            <input type="radio" name="gender" value="mr">
+            М
+        </label>
+    </p>
+    <p>
+        <label>Какой курс по информатике вы посещаете?</label>
+        <textarea name="question" cols="40" rows="3"></textarea>
+    </p>
+    <p>
+    <label>Нравятся ли вам уроки информатики?</label>
+    <textarea name="question2" cols="40" rows="3"></textarea>
+    </p>
+    <p>
+        <label>Сколько часов вы делаете домашнее задание по информатике?</label>
+        <select name="hours">
+            <option>менее часа</option>
+            <option>1-2</option>
+            <option>3-4</option>
+            <option>5-6</option>
+            <option>7-8</option>
+            <option>10-12</option>
+            <option>более 12</option>
+            <option>не делаю</option>
+        </select>
+    </p>
+    <p>
+        <label>
+            <input type="checkbox" name="terms">
+            Я согласен на <a href="/terms">обработку персональных данных</a>
+        </label>
+    </p>
+    <p>
+        <button>
+            Отправить данные
+        </button>
+    </p>
+    <p><b>Спасибо за прохождение опроса! Ваш отзыв очень важен для нас!</b><br>
+</form>
+</body>
+</html>
